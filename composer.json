@@ -15,7 +15,8 @@
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.5",
         "livewire/livewire": "^2.0",
-        "rohsyl/omega-core": "dev-master"
+        "rohsyl/omega-core": "dev-master",
+        "rohsyl/omega-plugin-text": "dev-master"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -66,6 +67,10 @@
         {
             "type": "path",
             "url": "../omega-core"
+        },
+        {
+            "type": "path",
+            "url": "../omega-plugin-text"
         }
     ]
 }
