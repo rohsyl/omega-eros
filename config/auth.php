@@ -41,6 +41,11 @@ return [
             'provider' => 'users',
         ],
 
+        'member' => [
+            'driver' => 'session',
+            'provider' => 'members',
+        ],
+
         'api' => [
             'driver' => 'token',
             'provider' => 'users',
@@ -69,6 +74,11 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => \rohsyl\OmegaCore\Models\User::class,
+        ],
+
+        'members' => [
+            'driver' => 'eloquent',
+            'model' => \rohsyl\OmegaCore\Models\Member::class,
         ],
 
         // 'users' => [

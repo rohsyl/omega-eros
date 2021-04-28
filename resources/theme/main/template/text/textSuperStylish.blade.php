@@ -1,0 +1,1 @@
+<div style="column-count: 3">{!! $text !!}</div>

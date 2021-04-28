@@ -15,7 +15,8 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         OmegaTheme::setThemePath(resource_path() . '/theme/main');
-        OmegaTheme::setInstallerPath('/install/install.php');
+        OmegaTheme::setInstallerPath('install/install.php');
+        OmegaTheme::setTemplateRegisterPath('template/register.php');
     }
 
     /**
