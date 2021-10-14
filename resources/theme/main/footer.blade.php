@@ -2,7 +2,7 @@
 <!-- Footer -->
 <footer id="footer">
     <div class="container">
-        {{-- ModuleArea::Display(Entity::Page(), 'footer', 'templated-hielo') --}}
+        {!! Entity::Site()->widgetArea()->display('footer') !!}
     </div>
     <div class="copyright">
         &copy; Sylvain Roh. Powered by OmegaCMS.

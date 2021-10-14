@@ -45,7 +45,7 @@
         {!! Entity::Page()->content !!}
     </div>
     <div class="col-md-3">
-        {!! ModuleArea::Display(Entity::Page(), 'sidebar', 'templated-hielo') !!}
+        {!! Entity::Site()->widgetArea()->display('sidebar') !!}
     </div>
 </div>
 <!-- Content -->

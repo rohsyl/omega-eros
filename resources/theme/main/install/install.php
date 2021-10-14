@@ -1,6 +1,6 @@
 <?php
-//use Omega\Facades\ModuleArea;
 use rohsyl\OmegaCore\Utils\Overt\Theme\Installer\Installer;
+use rohsyl\OmegaCore\Utils\Overt\Theme\ThemeManager;
 
 /**
  * @return Installer
@@ -12,7 +12,7 @@ return Installer::For('templated-hielo')
         'website' => 'https://templated.co/hielo',
         'colors' => ['#000000', '#ffffff', '#a6a6a6']
     ])
-    ->postInstall(function($name){
-        //ModuleArea::Create('footer', $name);
-        //ModuleArea::Create('sidebar', $name);
+    ->postInstall(function(ThemeManager $themeManager){
+        $themeManager->widgetArea()->create('sidebar');
+        $themeManager->widgetArea()->create('footer');
     });
