@@ -1,5 +1,5 @@
 <?php
-use Omega\Utils\Theme\Template;
+use rohsyl\OmegaCore\Utils\Overt\Theme\Component\Template;
 
 /**
  * @var Template
